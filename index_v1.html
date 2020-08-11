@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Are You Tech Addicted</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/master.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--  NOTES
+            Emmet New Page Content code
+
+                .page>.page-content>h4.tally{xnum of 9}+h1{  }+p{  }+.btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="y"]#qxnumRadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="n"]#qxnumRadioN{No}^^section.footer>button.btn.btn-secondary.back.ml-auto.mr-1{Back}+button.btn.btn-primary.next.disabled{Next}
+
+            Emmet Yes or No Button Group ----- change q4Radio to q2Radio and so on.
+
+                .btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioN{No}
+            -->
+        <div class="page current-page">
+            <div class="page-content">
+                <h1>Are you tech-addicted?</h1>
+                <p>
+                    Tech addiction can be a serious problem in our life, but doesn't everyone struggle with it to some extent? Find out where you land on the "tech-addiction" spectrum in our quick online quiz!
+                </p>
+                <button class="btn btn-lg btn-primary next getStarted">Let's Do This!</button>
+
+            </div>
+        </div>
+        <div class="page">
+            <div class="page-content" onclick="enableStartOver();">
+                <h4 class="tally">1 of 9</h4>
+                <h1>Is checking your phone the first thing you do after waking up?</h1>
+                <p>
+                    This is a typical occurance for most, people, especially if your phone is used as an alarm clock. But does it seem to distract you in the morning, slowing down your wake-up routine and making you late for work, or distracting you from your kids or other responsibilities?
+                </p>
+                
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label for="" class="btn btn-secondary">
+                        <input type="radio" name="q4Radio" value="y" id="q4RadioY">Yes
+                    </label>
+                    <label for="" class="btn btn-secondary">
+                        <input type="radio" name="q4Radio" value="n" id="q4RadioN">No
+                    </label>
+                </div>
+                
+                
+                <section class="footer">
+                	<button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button>
+                </section>
+            </div>
+        </div>
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">2 of 9</h4>
+                <h1>Do you find the normal laws of space and time seem to rapidly speed-up when you use your phone?</h1>
+                <p>In other words, do you feel your phone sucks you in like a black hole?</p>
+                
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q2Radio" value="y" id="q2RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q2Radio" value="n" id="q2RadioN">No</label></div>
+
+                <section class="footer">
+                    <button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button>
+                </section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">3 of 9</h4>
+                <h1>Would you rather watch basketball highlights on your smartphone rather than hit the courts with your friends at the park?</h1>
+                <p>If basketball isn't your thing, replace it with an activity you enjoy doing. Are you missing out?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q3Radio" value="y" id="q3RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q3Radio" value="n" id="q3RadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">4 of 9</h4>
+                <h1>Is your phone the last thing you say goodnight to?</h1>
+                <p>  </p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q4Radio" value="y" id="q4RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q4Radio" value="n" id="q4RadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">5 of 9</h4>
+                <h1>When feeling restless, do you turn to your phone to calm yourself down?</h1>
+                <p>It's easy to build a habit of instinctively going to your phone when the stress is on. You think a quick escape will give you the will power to trudge on when in all actuality, it hinders your progress. Is this you?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q5Radio" value="y" id="q5RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q5Radio" value="n" id="q5RadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">6 of 9</h4>
+                <h1>Does your phone cling to you like a highschool girlfriend?</h1>
+                <p>Perhaps you should ask yourself, when was the last time you went without a phone anywhere? Believe it or not, 30 years ago it was rare for people to carry cell phones! :-O</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q6Radio" value="y" id="q6RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q6Radio" value="n" id="q6RadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">7 of 9</h4>
+                <h1>Do you spend more than 4 hours per day on your phone?</h1>
+                <p>Most of us have some reason to use a phone for extended periods of time. Perhaps you call your grandma every evening who lives 1,000 miles away, and she's a talker! But is your phone use getting out of hand?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="y" id="qxnumRadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="n" id="qxnumRadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">8 of 9</h4>
+                <h1>Do you go through smartphones like K-Cups?</h1>
+                <p>In other words, do you enjoy trading in your phone for the newest model?</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="y" id="qxnumRadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="n" id="qxnumRadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h4 class="tally">9 of 9</h4>
+                <h1>Is your phone your main course at the dinner table?</h1>
+                <p>Do you place your phone on the table at the start of a meal? Or is it in your hand the whole time? Chances are it could be your main course!</p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="y" id="qxnumRadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="qxnumRadio" value="n" id="qxnumRadioN">No</label></div>
+                <section class="footer"><button class="btn btn-secondary back ml-auto mr-1">Back</button><button class="btn btn-primary next disabled">Next</button></section>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="page-content">
+                <h1>Ready to see the results?..................</h1>
+                <p></p>
+                <section class="footer"><button class="btn btn-secondary back ml-auto">Back</button></section>
+            </div>
+        </div>
+        
+        <div class="start-over fixed-bottom hide"><a href="index.html" class="refresh-link">Start Over</a></div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

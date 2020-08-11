@@ -1,0 +1,174 @@
+:root {
+    --paper-white: #F9F6F2;
+    --light-warm-gray: #D6D1CA;
+    --medium-warm-gray: #918B88;
+    --charcoal: #514D4A;
+    --alternate: #d29074;
+    --alternate-hover: hsla(18, 61.1%, 70%, 1); /*original hsla(18, 51.1%, 63.9%, 1); */
+  }
+
+  body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light-warm-gray);
+      color: var(--charcoal);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'bookmania', serif;
+  }
+
+  .page {
+      background-color: var(--paper-white);
+      background: var(--light-warm-gray);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all ease-in-out 300ms;
+      z-index: -1;
+      display: grid;
+      place-items: center;
+  }
+  .page-content {
+      max-width: 700px;
+      padding: 30px;
+  }
+  .page .footer {
+      bottom: 0px;
+      text-align: left;
+      margin: 30px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  .start-over {
+      /*z-index: 2;*/
+      opacity: 1;
+      transition: all ease-in-out 300ms;
+      max-width: 700px;
+      text-align: right;
+      margin: 0 auto;
+      padding: 0 30px;
+  }
+  .start-over.hide {
+      opacity: 0;
+  }
+  .refresh-link {
+      color: var(--medium-warm-gray);
+      background-color: var(--light-warm-gray);
+      opacity: 0.9;
+      display: inline-block;
+      padding: 6px 10px;
+      transition: all ease-in-out 400ms;
+  }
+  .refresh-link:hover {
+    color: var(--charcoal);
+    opacity: 1;
+  }
+
+  .current-page {
+      z-index: 1;
+      opacity: 1;
+      transition: all ease-in-out 300ms;
+  }
+
+/* BUTTON STYLING */
+
+.btn {
+    border-radius: 0px;
+}
+.btn-group label.btn {
+    /*border-radius: 20px;*/
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.btn-secondary {
+    background-color: var(--medium-warm-gray);
+    border-color: var(--medium-warm-gray);
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--charcoal);
+    border-color: var(--charcoal);
+}
+
+.btn-group label.btn.btn-secondary:hover, .btn-group label.btn.btn-secondary:focus, .btn-group label.btn.btn-secondary:not(:disabled):not(.disabled).active, .btn-group label.btn.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--alternate);
+    border-color: var(--alternate);
+}
+
+.btn-secondary:focus, .btn-secondary.focus, .btn-secondary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem var(--medium-warm-gray);
+}
+.btn-group label.btn.btn-secondary:focus, .btn-group label.btn.btn-secondary.focus, .btn-group label.btn.btn-secondary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0rem var(--alternate-hover);
+}
+
+.btn-primary:not(.next), .btn-primary.next, .btn-primary.next:not(:disabled):not(.disabled):active, button[type=submit].btn-primary {
+    background-color: var(--alternate);
+    border-color: var(--alternate);
+    filter: brightness(1) saturate(1) contrast(1) hue-rotate(360deg);
+    transition: filter ease-in-out 200ms;
+}
+
+.btn-primary:not(.next), .btn-primary.next:hover:not(:disabled):not(.disabled), button[type=submit].btn-primary:hover {
+    /*background-color: var(--alternate-hover);
+    border-color: var(--alternate-hover);*/
+    filter: brightness(.9) saturate(1.15) contrast(1.2) hue-rotate(347deg);
+}
+
+.btn-primary:not(.next), button.btn.btn-primary.next:focus, button.btn.btn-primary.next:active:focus {
+    box-shadow: 0 0 0 0.0rem rgb(209 91 42 / 22%);
+}
+
+/* Background Images */
+
+.page::after {
+    content: "";
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+    transition: all ease-in-out 300ms;
+}
+.page.page-1::after {
+    background-image: url(../images/personas/illustration_intro-img.jpg);
+}
+
+.persona-img {
+    background-size: auto 100%;
+    background-position: center;
+    min-height: 400px;
+    height: 100%;
+    width: 100%;
+}
+
+.persona-img.flipster {
+    background-image: url(../images/personas/illustration_flipster.jpg);
+}
+.persona-img.zen-mode {
+    background-image: url(../images/personas/illustration_zen-mode.jpg);
+}
+.persona-img.brand-loyalist {
+    background-image: url(../images/personas/illustration_brand-loyalist.jpg);
+}
+.persona-img.tech-junky {
+    background-image: url(../images/personas/illustration_tech-junky.jpg);
+}
+.persona-img.man {
+    background-image: url(../images/personas/illustration_man.jpg);
+}
+
+
+/* Disable functionality buttons */
+/*section.footer .back,*/ section.footer .next {
+    display: none;
+}
