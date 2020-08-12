@@ -155,6 +155,8 @@
     min-height: 400px;
     height: 100%;
     width: 100%;
+    position: relative;
+    animation: float 3500ms infinite alternate ease-in-out;
 }
 
 .persona-img.flipster {
@@ -177,4 +179,31 @@
 /* Disable functionality buttons */
 /*section.footer .back,*/ section.footer .next {
     display: none;
+}
+
+/* Page Transitions & Animation */
+
+.page.current-page h1 {
+    transition: all ease-in-out 300ms;
+    transform: translateX(0px);
+}
+.page:not(.current-page):not(.loaded) h1 {
+    transition: all ease-in-out 300ms;
+    transform: translateX(-20px);
+}
+.page.loaded:not(.current-page) h1 {
+    transition: all ease-in-out 300ms;
+    transform: translateX(20px);
+}
+
+@keyframes float {
+    0% {
+        top: -4px;
+    }
+    50% {
+        top: 4px;
+    }
+    100% {
+        top: -4px;
+    }
 }

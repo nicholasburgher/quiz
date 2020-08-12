@@ -30,7 +30,7 @@ function next(button, input) {
         var target = input + 1;
         var pages = document.querySelectorAll(".page");
         document.querySelector(".current-page").classList.remove("current-page");
-        setTimeout(function(){pages[target].classList.add("current-page"); }, 300);
+        setTimeout(function(){pages[target].classList.add("current-page"); pages[target].classList.add("loaded"); }, 300);
     }
 }
 
@@ -39,6 +39,7 @@ function back(button, input) {
         var target = input;
         var pages = document.querySelectorAll(".page");
         document.querySelector(".current-page").classList.remove("current-page");
+        pages[target + 1].classList.remove("loaded");
         setTimeout(function(){pages[target].classList.add("current-page"); }, 300);
     }
 }
