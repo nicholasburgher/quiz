@@ -143,9 +143,15 @@
     background-image: url(../images/personas/illustration_intro-img.jpg);
 }
 
+.form-column {
+    z-index: 1;
+}
 .persona-img {
     background-size: auto 100%;
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(1.5);
     min-height: 400px;
     height: 100%;
     width: 100%;
