@@ -7,7 +7,7 @@ window.onload = function() {
             nextButtons[i].setAttribute("data-placement","top");
             nextButtons[i].setAttribute("title","You must make a selection to continue");
         }
-        if (i == nextButtons.length - 1) {
+        if (i == nextButtons.length - 1 && nextButtons.length > 1) {
             nextButtons[i].setAttribute("onclick","next(this," + i + "); calculate();"); 
         }
     }

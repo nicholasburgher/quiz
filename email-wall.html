@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Are You Tech Addicted</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/master.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--  NOTES
+            Emmet New Page Content code
+
+                .page>.page-content>h4.tally{xnum of 9}+h1{  }+p{  }+.btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="y"]#qxnumRadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="n"]#qxnumRadioN{No}^^section.footer>button.btn.btn-secondary.back.ml-auto.mr-1{Back}+button.btn.btn-primary.next.disabled{Next}
+
+            Emmet Yes or No Button Group ----- change q4Radio to q2Radio and so on.
+
+                .btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioN{No}
+            -->
+        <div class="page current-page page-1 loaded">
+            <div class="page-content">
+                <h1>Are you tech-addicted?</h1>
+                <p>
+                    Tech addiction can be a serious problem in our life, but doesn't everyone struggle with it to some extent? Find out where you land on the "tech-addiction" spectrum in our quick online quiz!
+                </p>
+                <button class="btn btn-lg btn-primary next getStarted">Let's Do This!</button>
+
+            </div>
+        </div>
+
+        <div class="page page-last">
+            <div class="page-content" id="results-page">
+                <div class="row">
+                    <div class="col-5"></div>
+                    <div class="col">
+                        <h1>Ready to see results?</h1>
+                        <p>Enter your first name and email to see which tech addiction profile you're most like.</p>
+                        <section class="footer">
+                            <!--<button class="btn btn-secondary back ml-auto">Back</button>--><!-- no back button, it would break the scoring.-->
+                            <div class="align-items-center w-100">
+                                <div class="form-column">
+                                    <form action="" name="form" onsubmit="return validateForm(this.name);" method="post" class="mr-auto">
+                                        <div class="form-group">
+                                            <label for="fname">First name</label>
+                                            <input type="text" name="fname" id="fname" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email address</label>
+                                            <input type="email" name="email" id="email" class="form-control">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" style="float: right">Submit</button>
+                                    </form>
+                                </div>
+                                
+                                <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup {}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://techless.us20.list-manage.com/subscribe/post?u=68efaf51274c99b83debb4831&amp;id=22174059fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+        <div class="form-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+        </div>
+<div class="form-group">
+	<label for="mce-EMAIL">Email Address </label>
+	<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_68efaf51274c99b83debb4831_22174059fb" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='PERSONA';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="start-over fixed-bottom hide"><a href="index.html" class="refresh-link">Start Over</a></div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="scripts/index.js" async defer></script>
+    </body>
+</html>
+

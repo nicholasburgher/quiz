@@ -73,6 +73,10 @@
       transition: all ease-in-out 300ms;
   }
 
+  .form-group label{
+      padding-left: 2px;
+  }
+
 /* BUTTON STYLING */
 
 .btn {

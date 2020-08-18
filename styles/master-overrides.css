@@ -1,0 +1,92 @@
+
+@media only screen and (min-width: 300px) {
+    .page.page-1::after {
+        background-size: auto 100%;
+        background-position: center;
+        opacity: .3;
+    }
+}
+@media only screen and (min-width: 576px) {
+    .page.page-1::after {
+        background-size: auto 105vw;
+        background-position: -30vw 68%;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 785px) {
+    .page.page-1::after {
+        background-size: auto 105vw;
+        background-position: -30vw 57%;
+        opacity: 1;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .page.current-page.page-1::after {
+        background-size: auto 120%;
+        background-position: calc(50% - 135px) 60%;
+        opacity: 1;
+    }
+    .current-page .intro-text {
+        padding: 10px;
+        margin: - 10px;
+        background-color: rgba(255,255,255,.7);
+        backdrop-filter: blur(8px);
+        transition: all ease-in-out 300ms;
+        transform: translateY(0px);
+    }
+    .intro-text {
+        transform: translateY(-200px);
+        transition: all ease-in-out 300ms;
+    }
+}
+
+.tally::after {
+    content: ' of 7';
+    opacity: .5;
+}
+
+.footer button.back.btn-secondary {
+    position: absolute;
+    bottom: 3px;
+    left: 30px;
+    background-color: var(--medium-warm-gray);
+    opacity: .7;
+    border: none;
+}
+
+button.btn.btn-secondary.back:before {
+    content:'';
+    display: inline-block;
+    border-style: solid;
+    border-width: 17px 10px 17px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 1px;
+    transform: scale(1.1, 1.064);
+    left: -21px;
+    height: 0;
+    border-color: transparent var(--medium-warm-gray) transparent transparent
+}
+
+.back {
+    display: none;
+}
+
+.page-content {
+    position: relative;
+    min-height: 370px;
+}
+
+.btn-group.btn-group-toggle {
+    /*float: right;*/
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+
+.persona-img {
+    transform: scale(1);
+    /*animation: none;*/
+}

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/master.css">
+        <link rel="stylesheet" href="styles/master-overrides.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -27,18 +28,27 @@
                 .btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioN{No}
             -->
         <div class="page current-page page-1 loaded">
-            <div class="page-content">
-                <h1>Are you tech-addicted?</h1>
-                <p>
-                    Tech addiction can be a serious problem in our life, but doesn't everyone struggle with it to some extent? Find out where you land on the "tech-addiction" spectrum in our quick online quiz!
-                </p>
-                <button class="btn btn-lg btn-primary next getStarted">Let's Do This!</button>
+            <div class="page-content row">
+                <div class="col-4 col-lg-3 d-none d-sm-block" >
+                </div>
+                <div class="col d-flex flex-column mt-0 pt-0 mt-sm-5 pt-sm-3">
+                    <div class="intro-text">
+                        <h1>Are you tech-addicted?</h1>
+                        <p>
+                            Tech addiction can be a serious problem in our life, but doesn't everyone struggle with it to some extent? Find out where you land on the "tech-addiction" spectrum in our quick online quiz!
+                        </p>
+                    </div>
+                    <div class="align-self-end">
+                        <button class="btn btn-lg btn-primary next getStarted mt-3">Let's Do This!</button>
+                    </div>
+                </div>
+                
 
             </div>
         </div>
         <div class="page">
             <div class="page-content" onclick="enableStartOver();">
-                <h4 class="tally">1 of 7</h4>
+                <h4 class="tally">1</h4>
                 <h1>Do you check your phone right after waking up?</h1>
                 <p>
                     
@@ -61,7 +71,7 @@
         </div>
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">2 of 7</h4>
+                <h4 class="tally">2</h4>
                 <h1>Do you find the normal laws of space and time seem to rapidly speed-up when you use your phone?</h1>
                 <p>In other words, do you feel your phone sucks you in like a black hole?</p>
                 
@@ -75,7 +85,7 @@
 
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">3 of 7</h4>
+                <h4 class="tally">3</h4>
                 <h1>Would you rather watch YouTube clips on your phone so you “feel like  you’re there,” rather than getting dressed and actually going?</h1>
                 <p></p>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q3Radio" value="y" id="q3RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q3Radio" value="n" id="q3RadioN">No</label></div>
@@ -85,7 +95,7 @@
 
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">4 of 7</h4>
+                <h4 class="tally">4</h4>
                 <h1>When feeling restless, do you turn to your phone to calm yourself down?</h1>
                 <p>  </p>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q4Radio" value="y" id="q4RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q4Radio" value="n" id="q4RadioN">No</label></div>
@@ -95,7 +105,7 @@
 
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">5 of 7</h4>
+                <h4 class="tally">5</h4>
                 <h1>Do you spend more than 4 hours per day on your phone?</h1>
                 <p></p>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q5Radio" value="y" id="q5RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q5Radio" value="n" id="q5RadioN">No</label></div>
@@ -105,7 +115,7 @@
 
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">6 of 7</h4>
+                <h4 class="tally">6</h4>
                 <h1>Do you go through smartphones like K-Cups?</h1>
                 <p>In other words, do you enjoy trading in your phone for the newest model?</p>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q6Radio" value="y" id="q6RadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q6Radio" value="n" id="q6RadioN">No</label></div>
@@ -115,7 +125,7 @@
 
         <div class="page">
             <div class="page-content">
-                <h4 class="tally">7 of 7</h4>
+                <h4 class="tally">7</h4>
                 <h1>Is your phone your main course at the dinner table?</h1>
                 <p></p>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons"><label for="" class="btn btn-secondary"><input type="radio" name="q7numRadio" value="y" id="q7numRadioY">Yes</label><label for="" class="btn btn-secondary"><input type="radio" name="q7numRadio" value="n" id="q7numRadioN">No</label></div>
@@ -151,12 +161,12 @@
             </div>
         </div>
         
-        <div class="start-over fixed-bottom hide"><a href="index.html" class="refresh-link">Start Over</a></div>
+        <div class="start-over fixed-bottom hide"><a href="index2.html" class="refresh-link">Start Over</a></div>
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="scripts/index.js" async defer></script>
+        <script src="index.js" async defer></script>
     </body>
 </html>
 
