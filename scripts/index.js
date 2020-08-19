@@ -204,6 +204,7 @@ function calculate() {
     }
     console.log(personaResult); //debugging code
     document.querySelector("#results-page h1").innerHTML = "You are a " + personaResult + "!";
+    document.querySelector("#mc_persona").value = personaResult;
     document.querySelector(".persona-img").classList.add(personaImage);
 }
 
