@@ -209,7 +209,9 @@ function calculate() {
 }
 
 function quizValidate() {
-    if (document.querySelector("#mce-success-response").innerHTML = "Thank you for subscribing!") {
+    var errorField = document.querySelector("#mce-error-response");
+    var successField = document.querySelector("#mce-success-response");
+    if (successField.innerHTML == "Thank you for subscribing!" && successField.style.display == "" && errorField.innerHTML == "" && errorField.style.display == "none") {
         next(document.querySelector("#mc-embedded-subscribe"),8);
     }
 }
