@@ -209,10 +209,14 @@ function calculate() {
 }
 
 function quizValidate() {
+    console.log("running validator");
     var errorField = document.querySelector("#mce-error-response");
     var successField = document.querySelector("#mce-success-response");
     if (successField.innerHTML == "Thank you for subscribing!" && successField.style.display == "" && errorField.innerHTML == "" && errorField.style.display == "none") {
-        next(document.querySelector("#mc-embedded-subscribe"),8);
+        console.log("successful submission accomplished");
+        var submitButton = document.querySelector("#mc-embedded-subscribe");
+        submitButton.value = "Next";
+        next(submitButton,8);
     }
 }
 
