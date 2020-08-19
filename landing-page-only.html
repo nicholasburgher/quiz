@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Are You Tech Addicted</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/master.css">
+        <link rel="stylesheet" href="styles/master-overrides.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.google.com/chrome/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--  NOTES
+            Emmet New Page Content code
+
+                .page>.page-content>h4.tally{xnum of 9}+h1{  }+p{  }+.btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="y"]#qxnumRadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="qxnumRadio" value="n"]#qxnumRadioN{No}^^section.footer>button.btn.btn-secondary.back.ml-auto.mr-1{Back}+button.btn.btn-primary.next.disabled{Next}
+
+            Emmet Yes or No Button Group ----- change q4Radio to q2Radio and so on.
+
+                .btn-group.btn-group-toggle[data-toggle="buttons"]>label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioY{Yes}^label.btn.btn-secondary>input[type="radio" name="q4Radio" value="y"]#q4RadioN{No}
+            -->
+        <div class="page current-page page-1 loaded">
+            <div class="page-content row">
+                <div class="col-4 col-lg-3 d-none d-sm-block" >
+                </div>
+                <div class="col d-flex flex-column mt-0 pt-0 mt-sm-5 pt-sm-3">
+                    <div class="intro-text">
+                        <h1>Are you tech-addicted?</h1>
+                        <p>
+                            Tech addiction can be a serious problem in our life, but doesn't everyone struggle with it to some extent? Find out where you land on the "tech-addiction" spectrum in our quick online quiz!
+                        </p>
+                    </div>
+                    <div class="align-self-end">
+                        <button class="btn btn-lg btn-primary next getStarted mt-3">Let's Do This!</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        
+
+        <div class="page page-last">
+            <div class="page-content text-center" id="results-page" onclick="enableStartOver();">
+                <h1>You are a Brand Loyalist!</h1>
+                <p>Learn more about your persona at <a id="persona-link" href="https://techless.com/modern-flipster">techless.com</a>.</p>
+                <section class="footer m-0">
+                    <!--<button class="btn btn-secondary back ml-auto">Back</button>--><!-- no back button, it would break the scoring.-->
+                    <div class="align-items-center row w-100">
+                        <div class="col-12">
+                            <a id="persona-img-link" href="https://techless.com/modern-flipster"><div class="persona-img brand-loyalist"></div></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <div class="start-over fixed-bottom hide"><a href="landing-page-only.html" class="refresh-link">Start Over</a></div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="scripts/index.js" async defer></script>
+    </body>
+</html>
+

@@ -63,22 +63,23 @@ function enableStartOver() {
 }*/
 
 //Persona Factory
-function Persona (title, id, score, img) {
+function Persona (title, id, score, img, url) {
     this.title = title;
     this.id = id;
     this.score = score;
-    this.img = img
+    this.img = img;
+    this.url = url;
 }
 var personas = [];
-var p1 = new Persona("Modern Flipster",1,0,"flipster");
+var p1 = new Persona("Modern Flipster",1,0,"flipster","modern-flipster");
 personas.push(p1);
-var p2 = new Persona('"Phone on Zen Mode"',2,0,"zen-mode");
+var p2 = new Persona('"Phone on Zen Mode"',2,0,"zen-mode","zen-mode");
 personas.push(p2);
-var p3 = new Persona("Brand Loyalist",3,0,"brand-loyalist");
+var p3 = new Persona("Brand Loyalist",3,0,"brand-loyalist","brand-loyalist");
 personas.push(p3);
-var p4 = new Persona("Bonafide Tech Addict",4,0,"tech-junky");
+var p4 = new Persona("Bonafide Tech Addict",4,0,"tech-junky","tech-addict");
 personas.push(p4);
-var p5 = new Persona('"Man Shall Live on Phone Alone"',5,0,"man");
+var p5 = new Persona('"Man Shall Live on Phone Alone"',5,0,"man","tech-disciple");
 personas.push(p5);
 
 function calculate() {
@@ -200,12 +201,15 @@ function calculate() {
         if (personas[k].score === winningScore) {
             var personaResult = personas[k].title;
             var personaImage = personas[k].img;
+            var personaURL = personas[k].url;
         }
     }
     console.log(personaResult); //debugging code
     document.querySelector("#results-page h1").innerHTML = "You are a " + personaResult + "!";
     document.querySelector("#mc_persona").value = personaResult;
     document.querySelector(".persona-img").classList.add(personaImage);
+    document.querySelector("#persona-link").href = "https://techless.com/" + personaURL;
+    document.querySelector("#persona-img-link").href = "https://techless.com/" + personaURL;
 }
 
 function quizValidate() {

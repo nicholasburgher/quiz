@@ -158,7 +158,7 @@
                                     <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" id="mc_persona" name="PERSONA" tabindex="-1"></div><!-- original: b_68efaf51274c99b83debb4831_22174059fb-->
-                                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary" style="float: right;" onclick="setTimeout(quizValidate();,3000);"></div>
+                                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary" style="float: right;" onclick="setTimeout(quizValidate,2000);"></div>
                                 </div>
                             </form>
                         </div>
@@ -170,27 +170,14 @@
         </div>
 
         <div class="page page-last">
-            <div class="page-content" id="results-page">
-                <h1>Uh Oh! You don't have a persona yet!</h1>
-                <p>To find out what this means for you, enter your email and first name, and we'll send your detailed tech addiction profile right over.</p>
-                <section class="footer">
+            <div class="page-content text-center" id="results-page" onclick="enableStartOver();">
+                <h1>You are a Brand Loyalist!</h1>
+                <p>Learn more about your persona at <a id="persona-link" href="https://techless.com/modern-flipster">techless.com</a>.</p>
+                <section class="footer m-0">
                     <!--<button class="btn btn-secondary back ml-auto">Back</button>--><!-- no back button, it would break the scoring.-->
                     <div class="align-items-center row w-100">
-                        <div class="col-12 col-sm-6 form-column">
-                            <form action="" name="form" onsubmit="return validateForm(this.name);" method="post" class="mr-auto">
-                                <div class="form-group">
-                                    <label for="fname">First name</label>
-                                    <input type="text" name="fname" id="fname" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" name="email" id="email" class="form-control">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="persona-img"></div>
+                        <div class="col-12">
+                            <a id="persona-img-link" href="https://techless.com/modern-flipster"><div class="persona-img brand-loyalist"></div></a>
                         </div>
                     </div>
                 </section>

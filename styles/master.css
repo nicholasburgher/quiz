@@ -7,6 +7,13 @@
     --alternate-hover: hsla(18, 61.1%, 70%, 1); /*original hsla(18, 51.1%, 63.9%, 1); */
   }
 
+  a {
+      color: var(--alternate);
+  }
+  a:hover {
+      color: var(--alternate-hover);
+  }
+
   body {
       font-family: 'Roboto', sans-serif;
       background-color: var(--light-warm-gray);
