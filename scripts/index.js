@@ -208,6 +208,12 @@ function calculate() {
     document.querySelector(".persona-img").classList.add(personaImage);
 }
 
+function quizValidate() {
+    if (document.querySelector("#mce-success-response").innerHTML = "Thank you for subscribing!") {
+        next(document.querySelector("#mc-embedded-subscribe"),8);
+    }
+}
+
 /*
 Quiz Calculations
 7 Yes and No questions
