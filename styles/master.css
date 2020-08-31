@@ -37,6 +37,7 @@
       place-items: center;
   }
   .page-content {
+      width: 100%;
       max-width: 700px;
       padding: 30px;
   }
@@ -168,6 +169,24 @@
     width: 100%;
     position: relative;
     animation: float 3500ms infinite alternate ease-in-out;
+}
+
+.pp-img {
+    position: relative;
+    animation: float 3500ms infinite alternate ease-in-out;
+}
+
+.pp-1 {
+    animation-delay: 1000ms;
+}
+
+.pp-2 {
+    animation-duration: 3000ms;
+}
+
+.pp-3 {
+    animation-delay: 2200ms;
+    animation-duration: 3250ms;
 }
 
 .persona-img.flipster {

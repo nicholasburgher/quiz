@@ -55,12 +55,12 @@ function enableStartOver() {
     document.querySelector(".start-over").classList.remove("hide");
 }
 //Function for jumping to the end of the quiz early
-/*function jump() {
+function jump() {
     console.log("jump");
     var pages = document.querySelectorAll(".page");
     document.getElementsByClassName("current-page")[0].classList.remove("current-page");
-    pages[pages.length - 1].classList.add("current-page");
-}*/
+    pages[pages.length - 2].classList.add("current-page");
+}
 
 //Persona Factory
 function Persona (title, id, score, img, url) {
