@@ -73,13 +73,13 @@ function Persona (title, id, score, img, url) {
 var personas = [];
 var p1 = new Persona("Modern Flipster",1,0,"flipster","modern-flipster");
 personas.push(p1);
-var p2 = new Persona('"Phone on Zen Mode"',2,0,"zen-mode","zen-mode");
+var p2 = new Persona('"Zen Minimalist"',2,0,"zen-mode","zen-minimalist");
 personas.push(p2);
 var p3 = new Persona("Brand Loyalist",3,0,"brand-loyalist","brand-loyalist");
 personas.push(p3);
-var p4 = new Persona("Bonafide Tech Addict",4,0,"tech-junky","tech-addict");
+var p4 = new Persona("Tech Addict",4,0,"tech-junky","tech-addict");
 personas.push(p4);
-var p5 = new Persona('"Man Shall Live on Phone Alone"',5,0,"man","tech-disciple");
+var p5 = new Persona('"Smartphone Disciple"',5,0,"man","smartphone-disciple");
 personas.push(p5);
 
 function calculate() {
