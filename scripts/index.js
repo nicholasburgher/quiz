@@ -192,11 +192,11 @@ function calculate() {
         personas[4].score--;  //Man
     }
     for (var j = 0; j < personas.length; j++) {
-        console.log(personas[j].title + " : " + personas[j].score);
+        //console.log(personas[j].title + " : " + personas[j].score);
     } //debugging code
     var scores = [personas[0].score,personas[1].score,personas[2].score,personas[3].score,personas[4].score]
     var winningScore = Math.max(...scores);
-    console.log(winningScore); //debugging code
+    //console.log(winningScore); //debugging code
     for (var k = 0; k < personas.length; k++) {
         if (personas[k].score === winningScore) {
             var personaResult = personas[k].title;
@@ -204,7 +204,7 @@ function calculate() {
             var personaURL = personas[k].url;
         }
     }
-    console.log(personaResult); //debugging code
+    //console.log(personaResult); //debugging code
     document.querySelector("#results-page h1").innerHTML = "You are a " + personaResult + "!";
     document.querySelector("#mc_persona").value = personaResult;
     document.querySelector(".persona-img").classList.add(personaImage);
@@ -221,6 +221,7 @@ function quizValidate() {
         var submitButton = document.querySelector("#mc-embedded-subscribe");
         submitButton.value = "Next";
         next(submitButton,8);
+        setTimeout(function(){window.location.href = document.getElementById("persona-link").href;},3000);
     }
 }
 
