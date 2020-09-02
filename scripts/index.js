@@ -212,16 +212,22 @@ function calculate() {
     document.querySelector("#persona-img-link").href = "https://techless.com/" + personaURL;
 }
 
+function submissionSuccessAction() {
+    console.log("successful submission accomplished");
+    var submitButton = document.querySelector("#mc-embedded-subscribe");
+    submitButton.value = "Next";
+    next(submitButton,8);
+    setTimeout(function(){window.location.href = document.getElementById("persona-link").href;},3000);
+}
+
 function quizValidate() {
     console.log("running validator");
     var errorField = document.querySelector("#mce-error-response");
     var successField = document.querySelector("#mce-success-response");
     if (successField.innerHTML == "Thank you for subscribing!" && successField.style.display == "" && errorField.innerHTML == "" && errorField.style.display == "none") {
-        console.log("successful submission accomplished");
-        var submitButton = document.querySelector("#mc-embedded-subscribe");
-        submitButton.value = "Next";
-        next(submitButton,8);
-        setTimeout(function(){window.location.href = document.getElementById("persona-link").href;},3000);
+        submissionSuccessAction();
+    } else if (successField.style.display == "none" && errorField.style.display == "" && errorField.innerHTML.includes("is already subscribed to ")) {
+        submissionSuccessAction();
     }
 }
 
